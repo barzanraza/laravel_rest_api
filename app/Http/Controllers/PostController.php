@@ -16,8 +16,8 @@ class PostController extends Controller
     public function index()
     {
         //
-        $posts = Post::paginate(10);
-        return PostResource::collection($posts);
+        $posts = Post::paginate(10);                
+        return PostResource::collection($posts);    // show the result as a collection
     }
 
     /**
